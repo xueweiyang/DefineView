@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_el2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.fcl.defineview.El2Activity">
+
+    <ImageView
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:src="@drawable/zf"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@+id/center_img"
+        android:id="@+id/pear_img"/>
+
+    <ImageView
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:src="@drawable/zb"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@+id/center_img"
+        android:id="@+id/orange_img"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zk"
+        android:id="@+id/center_img"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zh"
+        android:layout_alignLeft="@id/center_img"
+        android:layout_alignTop="@id/center_img"
+        android:id="@+id/left_img"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zi"
+        android:layout_alignRight="@id/center_img"
+        android:layout_alignTop="@id/center_img"
+        android:id="@+id/right_img"/>
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:onClick="start"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止"
+            android:onClick="stop"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
